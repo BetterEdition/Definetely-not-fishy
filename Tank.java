@@ -8,7 +8,7 @@ package fishgame;
 public class Tank extends World
 {
 
-    protected int bottom;
+    private int bottom;
 
     public int getBottom()
     {

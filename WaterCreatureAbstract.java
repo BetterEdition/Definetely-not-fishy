@@ -14,10 +14,11 @@ public abstract class WaterCreatureAbstract extends Actor implements CreatureInt
     protected int size;
     protected int speed;
 
-    public WaterCreatureAbstract(int size, int speed)
+    public WaterCreatureAbstract(int size, int speed, boolean orientation)
     {
         this.speed = speed;
         this.size = size;
+        this.orientation = orientation;
     }
 
     public int getHeight()
@@ -71,7 +72,6 @@ public abstract class WaterCreatureAbstract extends Actor implements CreatureInt
     @Override
     public void move()
     {
-        setLocation(getX() + speed, getY());
     }
 
     @Override
